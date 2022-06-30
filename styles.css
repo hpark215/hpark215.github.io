@@ -1,0 +1,535 @@
+/* css reset */
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* css START */
+/* 
+9.313rem/149.01px	A Visual Type Scale
+7.451rem/119.21px	A Visual Type Scale
+5.96rem/95.37px	A Visual Type Scale
+4.768rem/76.29px	A Visual Type Scale
+3.815rem/61.04px	A Visual Type Scale
+3.052rem/48.83px	A Visual Type Scale
+2.441rem/39.06px	A Visual Type Scale
+1.953rem/31.25px	A Visual Type Scale
+1.563rem/25.00px	A Visual Type Scale
+1.25rem/20.00px	A Visual Type Scale */
+
+html {
+  font-family: "Cormorant Garamond", serif;
+}
+
+header {
+  background-color: #000;
+  overflow-y: hidden;
+}
+
+/* nav */
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 5rem;
+}
+
+.topnav .active {
+  color: #d4af37;
+  font-size: 2.441rem;
+  text-decoration: underline;
+}
+
+.nav-items {
+  display: flex;
+  gap: 10rem;
+  text-decoration: none;
+  color: #fff;
+  transform: translate(0ch, 1rem);
+}
+
+/* hidden nav */
+
+/* principle text and image */
+
+/* typewwriter effect */
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15rem solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 4s steps(90, end), blink-caret 0.75s step-end infinite;
+  height: 2rem;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 32vw;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.principal-text-img {
+  padding: 10rem 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.principle-text {
+  font-size: 1.953rem;
+  color: #d4af37;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.principal-text-img img {
+  max-width: 30rem;
+}
+
+/* about section */
+
+.about,
+.projects {
+  padding: 0.5rem 5rem;
+  background-color: #000;
+
+  display: flex;
+  gap: 5rem;
+}
+
+.about-text,
+.projects-text {
+  color: #fff;
+}
+
+.about-title,
+.project-title {
+  font-size: 2.441rem;
+  padding-bottom: 0.8rem;
+}
+
+.about-imgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+}
+
+.about-text p {
+  max-width: 30rem;
+  line-height: 2rem;
+}
+
+.about-images:nth-child(2) {
+  grid-column: 2;
+  grid-row: 2;
+  transform: translate(0ch, -5rem);
+}
+
+.about-images {
+  width: 20rem;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+}
+
+.social {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* collaboration section */
+
+.collaboration-section {
+  background-color: black;
+  padding: 5rem;
+}
+.collaboration-section h3 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.collab-text {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.collab-link:active,
+.collab-link {
+  color: #d4af37;
+}
+
+.collab-img {
+  width: 100rem;
+  text-align: center;
+}
+
+.collab-img img {
+  padding: 3rem;
+}
+
+/*  */
+
+/*  */
+
+/*  */
+
+/*  */
+
+/* footer section */
+
+footer {
+  padding: 5rem;
+  padding-bottom: 0%;
+  text-align: center;
+  background-color: #000;
+  line-height: 4rem;
+}
+
+footer h3 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.mail-to {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.mail-to:hover {
+  text-decoration: none;
+}
+
+.icons {
+  max-width: 2rem;
+}
+
+/*  */
+
+/*  */
+
+/*  */
+
+/*  */
+
+/*  */
+
+/* resposive nav and principal section */
+@media only screen and (max-width: 1340px) {
+  .principle-text {
+    font-size: 2rem;
+    color: #d4af37;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 35vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .principle-text {
+    font-size: 1.5rem;
+    color: #d4af37;
+    font-style: italic;
+    font-weight: 400;
+  }
+  .principal-text-img img {
+    width: 20rem;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 32vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  .principal-text-img {
+    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .principle-text {
+    font-size: 1.5rem;
+    color: #d4af37;
+    font-style: italic;
+    font-weight: 400;
+  }
+  .principal-text-img img {
+    width: 20rem;
+    margin: 0 auto;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 43vw;
+    }
+  }
+}
+@media only screen and (max-width: 672px) {
+  .principal-text-img {
+    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .principle-text {
+    font-size: 1.5rem;
+    display: block;
+    margin: 0 auto;
+  }
+  .principal-text-img img {
+    width: 15rem;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100vw;
+    }
+  }
+
+  .topnav .active {
+    color: #d4af37;
+    font-size: 2.441rem;
+    text-decoration: underline;
+  }
+
+  .nav-items {
+    display: block;
+    gap: 10rem;
+    text-decoration: none;
+    color: #fff;
+    transform: translate(0ch, 1rem);
+  }
+
+  .principle-text {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .principal-text-img img {
+    width: 15rem;
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 680px) {
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-title {
+    font-size: 4rem;
+  }
+
+  .about-text {
+    display: block;
+    width: 100%;
+  }
+
+  .about-imgs {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .about-images {
+    padding-bottom: 10rem;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .social {
+    display: flex;
+    flex-direction: column;
+  }
+}
